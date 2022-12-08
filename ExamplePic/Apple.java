@@ -4,14 +4,20 @@ import java.awt.*;
 import java.applet.*;
 
 public class Apple {
-    public static void drawBody(Graphics g){
+    public static void drawApple(Graphics g, int x, int y){
 
     }
-    public static void drawStem(Graphics g){
-
+    public static void drawBody(Graphics g, int x, int y){
+        g.setColor(Color.red);
+        g.fillOval(x,y,20,20);
     }
-    public static void drawLeaf(Graphics g){
-
+    public static void drawStem(Graphics g, int x , int y){
+        g.setColor(new Color(255,128,64));
+        g.fillRect(105,100,5,5);
+    }
+    public static void drawLeaf(Graphics g, int x, int y){
+        g.setColor(Color.green);
+        g.fillRect(x+5,y,5,5 );
     }
 
 

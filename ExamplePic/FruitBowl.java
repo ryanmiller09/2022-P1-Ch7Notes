@@ -8,9 +8,9 @@ public class FruitBowl extends Applet{
         Bowl.drawBowl(g);
         Bowl.drawTable(g);
 
-        Apple.drawBody(g);
-        Apple.drawStem(g);
-        Apple.drawLeaf(g);
+        Apple.drawBody(g, 100, 100);
+        Apple.drawStem(g, 100,100);
+        Apple.drawLeaf(g, 100, 100);
 
         Banana.drawPeel(g);
         Banana.drawSlices(g);
